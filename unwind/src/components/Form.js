@@ -5,8 +5,8 @@ import logo from "../resources/logo.png";
 const Form = () => {
   return (
     <form className="Form">
-      <img src={logo} className="logo" />
-      <header className="title">{/* <h1>Unwind</h1> */}</header>
+      <header className="title"></header>
+      <img src={logo}></img>
       <button className="five" type="button">
         5 Mins
       </button>
