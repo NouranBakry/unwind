@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 function QuotesAPI() {
   const [quote, setQuote] = useState("");
-  const [loading, setLoading] = useState("");
+  // const [loading, setLoading] = useState("");
   const [author, setAuthor] = useState("");
 
   useEffect(() => {
@@ -17,11 +17,10 @@ function QuotesAPI() {
     return () => {};
   }, []);
   return (
-    <>
-      <p>Hello Quotes </p>
+    <div>
       <h1>{quote}</h1>
       <p>- {author}</p>
-    </>
+    </div>
   );
 }
 
