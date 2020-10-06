@@ -1,10 +1,9 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
-function QuotesAPI() {
+function GetQuotesAPI() {
   const [quote, setQuote] = useState("");
-  // const [loading, setLoading] = useState("");
   const [author, setAuthor] = useState("");
+  // const [loading, setLoading] = useState("");
 
   useEffect(() => {
     fetch("http://quotes.rest/qod.json?category=inspire")
@@ -24,4 +23,4 @@ function QuotesAPI() {
   );
 }
 
-export default QuotesAPI;
+export default GetQuotesAPI;

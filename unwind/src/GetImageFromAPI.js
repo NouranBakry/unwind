@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function GetImageFromAPI() {
   const [image, setImage] = useState("");
+
   useEffect(() => {
     fetch(
-      "https://api.https://api.nasa.gov/planetary/earth/imagery?lon=-95.33&lat=29.78&date=2018-01-01&dim=0.15&api_key=w0GN7gm0HfJn0OI596Ltgl6GfItyumOGUPGPzHdn.gov/planetary/earth/imagery"
-    ).then((res) => {
-      setImage(res.body);
-    });
+      "https://api.nasa.gov/planetary/apod?api_key=GHf55fKLPuTo7wtX7IlkwO2MN62g0FsnPdzbrI2G"
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data.url);
+        setImage(data);
+      });
     return () => {};
-  }, [input]);
+  }, []);
+  return <img className="image" alt={image.title} src={image.url} />;
 }
 export default GetImageFromAPI;
