@@ -30,9 +30,7 @@ const MeditationForm = (props) => {
         <br></br>
         <br></br>
         <h2 className="timeDisplay">0:00</h2>
-        <div className="player-container">
-          <audio className="song" src="./resources/beach.mp3"></audio>
-        </div>
+        <audio className="song" src="./resources/beach.mp3"></audio>
       </div>
     </form>
   );
