@@ -5,10 +5,10 @@ const Nav = () => {
     <div className="Nav">
       <ul className="ul">
         <li className="git">
-          <a href="www.github.com/NouranBakry/unwind">github</a>
+          <a href="www.github.com/NouranBakry/unwind">Github</a>
         </li>
         <li className="twitter">
-          <a href="www.twitter.com/nouranbakry_">Follow Me on Twitter</a>
+          <a href="www.twitter.com/nouranbakry_">Follow me on Twitter</a>
         </li>
         <li className="email">
           <a href="emailto:nouranaymanbakry@gmail.com">Email me</a>
