@@ -1,13 +1,20 @@
 import React from "react";
 import "./App.css";
 import Form from "./components/Form";
+import MeditationForm from "./components/MeditatationForm";
+// import Nav from "./components/Nav";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="App">
-      <Form>
-      </Form>
-    </div>
+    <Router>
+      <div className="App">
+        <Form></Form>
+        <Switch>
+          <Route path="/meditate" component={MeditationForm}></Route>
+        </Switch>
+      </div>
+    </Router>
   );
 };
 

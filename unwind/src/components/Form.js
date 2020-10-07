@@ -1,61 +1,59 @@
-import React, { Component } from "react";
-import MeditationForm from "./MeditatationForm";
+import React, { useState, useEffect } from "react";
 import "./Form.css";
-import GetQuotesAPI from "../GetQuoteFromAPI";
+import { Link } from "react-router-dom";
 
-class Form extends Component {
-  constructor() {
-    super();
-    this.state = {
-      visible: false,
-    };
-    this.getTodayFortuneCookie = this.getTodayFortuneCookie.bind(this);
-  }
-  getTodayFortuneCookie() {
-    this.setState({ visible: true });
-  }
-
-  render() {
-    const displayQuote = this.state.visible;
-    let quote = null;
-    if (displayQuote) {
-      quote = <GetQuotesAPI/>;
-    }
-    return (
-      <form className="Form">
-        <div>
-          <header className="title"></header>
-          <header className="title">
-            Unwind{" "}
-            <span role="img" aria-label="lotus">
-              🧘‍♀️
-            </span>
-          </header>
-          <br></br>
-          <br></br>
-          <button
-            className="meditationButton"
-            onClick={() => {
-              window.open(MeditationForm);
-            }}
-          >
-            Start Relaxing Meditation
+const Form = () => {
+  const [quote, setQuote] = useState("");
+  const [author, setAuthor] = useState("");
+  const [state, setState] = useState(false);
+  useEffect(() => {
+    fetch("http://quotes.rest/qod.json?category=inspire")
+      .then((res) => res.json())
+      .then((data) => {
+        setQuote(data.contents.quotes[0].quote);
+        setAuthor(data.contents.quotes[0].author);
+      });
+    return () => {};
+  }, []);
+  const handlequotesButton = (event) => {
+    event.preventDefault();
+    console.log(event);
+    setState(true);
+  };
+  return (
+    <form className="Form">
+      <div>
+        <header className="title"></header>
+        <header className="title">
+          Unwind
+          <span role="img" aria-label="lotus">
+            🧘‍♀️
+          </span>
+        </header>
+        <br></br>
+        <button className="quoteButton" onClick={handlequotesButton}>
+          Today's Fortune Cookie
+          <span role="img" aria-label="cookie">
+            🍪
+          </span>
+        </button>
+        <br></br>
+        <br></br>
+        <Link to="meditate">
+          <button className="meditationButton">
+            Start Meditating<span role="img" aria-label="meditate">🧘‍♀️</span>
           </button>{" "}
-          <br></br>
-          <br></br>
-          <button className="quoteButton" onClick={this.getTodayFortuneCookie}>
-            Today's Fortune Cookie{" "}
-            <span role="img" aria-label="cookie">
-              🍪
-            </span>
-          </button>
-          <br></br>
-          <br></br>
-          <div>{quote}</div>
-        </div>
-      </form>
-    );
-  }
-}
+        </Link>
+        <br></br>
+        <br></br>
+        {state && (
+          <div className="quote">
+            "{quote}" - {author}
+          </div>
+        )}
+      </div>
+    </form>
+  );
+};
 
 export default Form;

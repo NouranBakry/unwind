@@ -1,15 +1,7 @@
-.MeditationForm {
-    background: linear-gradient(rgba(250, 0, 0, 0.5), transparent);
-    background-color: blue;
-    position: relative;
-    border-radius: 10px;
-    display: inline;
-}
-
 .five,
 .ten {
-    color: rgb(233, 205, 241);
-    width: 50%;
+    color: white;
+    width: 15%;
     height: 20%;
     background: none;
     font-size: 20px;
@@ -19,8 +11,11 @@
     transition: all 0.5s ease;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1000px;
-    padding: 40px;
+
+.instruction {
+    color: white;
+    font-family: 'CoolVetica',
+        Helvetica Neue-serif;
+    font-size: 50px;
+    font-weight: 500;
 }

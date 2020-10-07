@@ -1,7 +1,12 @@
 .App {
-    place-content: center;
-    align-content: center;
-    align-items: center;
-    display: block;
+    height: 800px;
+    width: 1400px;
     text-align: center;
+    background: rgb(109, 109, 241);
+    font-family: 'CoolVetica',
+        Helvetica Neue-serif;
+    display: grid;
+    align-items: center;
+    background-image: url("./resources/background.png");
+    opacity: 3;
 }

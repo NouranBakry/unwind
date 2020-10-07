@@ -1,5 +1,6 @@
 import React from "react";
 import GetImageFromAPI from "../GetImageFromAPI";
+import "./MeditationForm.css";
 
 const MeditationForm = () => {
   return (
@@ -8,18 +9,23 @@ const MeditationForm = () => {
         className="container"
         style={GetImageFromAPI ? { background: GetImageFromAPI } : {}}
       >
-        <header className="title">
-          Unwind{" "}
-          <span role="img" aria-label="lotus">
-            🧘‍♀️
+        <h1 className="instruction">
+          {" "}
+          Pick a time{" "}
+          <span role="img" aria-label="clock">
+            ⏰
           </span>
-        </header>
+        </h1>
         <button className="five" type="button">
           5 Mins
         </button>
+        <br></br>
+        <br></br>
         <button className="ten" type="button">
           10 Mins
         </button>
+        <br></br>
+        <br></br>
       </div>
     </form>
   );

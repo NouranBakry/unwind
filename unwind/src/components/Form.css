@@ -1,23 +1,18 @@
-.Form {
-    background: linear-gradient(rgba(250, 0, 0, 0.5), transparent);
-    background-color: blue;
-    position: relative;
-    border-radius: 10px;
-    display: inline;
-}
+
 
 
 .title {
-    color: rgb(233, 205, 241);
-    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-family: 'CoolVetica',
+        Helvetica Neue-serif;
     font-size: 100px;
     font-weight: 500;
 }
 
 .meditationButton,
 .quoteButton {
-    color: rgb(233, 205, 241);
-    width: 50%;
+    color: white;
+    width: 30%;
     height: 20%;
     background: none;
     font-size: 20px;
@@ -25,4 +20,18 @@
     cursor: pointer;
     border: 2px solid white;
     transition: all 0.5s ease;
+}
+
+.quote {
+    color: white;
+    font-family: 'CoolVetica',
+        Helvetica Neue-serif;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
 }
