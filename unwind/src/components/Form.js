@@ -1,18 +1,15 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
 import MeditationForm from "./MeditatationForm";
 import "./Form.css";
 import GetQuotesAPI from "../GetQuoteFromAPI";
-import GetImageFromAPI from "../GetImageFromAPI";
 
 class Form extends Component {
-  constructor(props) {
+  constructor() {
     super();
     this.state = {
       visible: false,
     };
     this.getTodayFortuneCookie = this.getTodayFortuneCookie.bind(this);
-    this.getMeditationPage = this.getMeditationPage.bind(this);
   }
   getTodayFortuneCookie() {
     this.setState({ visible: true });
@@ -22,23 +19,39 @@ class Form extends Component {
     const displayQuote = this.state.visible;
     let quote = null;
     if (displayQuote) {
-      quote = <GetQuotesAPI />;
+      quote = <GetQuotesAPI/>;
     }
     return (
       <form className="Form">
-        <div
-          className="container"
-          style={{ GetImageFromAPI } ? { background: { GetImageFromAPI } } : {}}
-        >
-          {" "}
+        <div>
           <header className="title"></header>
-          <header className="title">Unwind</header>
-          <button>Start Relaxing Meditation</button> <br></br>
+          <header className="title">
+            Unwind{" "}
+            <span role="img" aria-label="lotus">
+              🧘‍♀️
+            </span>
+          </header>
           <br></br>
-          <button onClick={this.getTodayFortuneCookie}>
-            Today's Fortune Cookie 🍪
+          <br></br>
+          <button
+            className="meditationButton"
+            onClick={() => {
+              window.open(MeditationForm);
+            }}
+          >
+            Start Relaxing Meditation
+          </button>{" "}
+          <br></br>
+          <br></br>
+          <button className="quoteButton" onClick={this.getTodayFortuneCookie}>
+            Today's Fortune Cookie{" "}
+            <span role="img" aria-label="cookie">
+              🍪
+            </span>
           </button>
-          {quote}
+          <br></br>
+          <br></br>
+          <div>{quote}</div>
         </div>
       </form>
     );

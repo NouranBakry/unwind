@@ -1,5 +1,7 @@
 .App {
     place-content: center;
     align-content: center;
-    background: linear-gradient(rgba(250, 0, 0, 0.5), transparent);
+    align-items: center;
+    display: block;
+    text-align: center;
 }
