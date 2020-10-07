@@ -19,12 +19,12 @@ const MeditationForm = (props) => {
         </button>
         <br></br>
         <br></br>
-        <button className="five" data-time="300">
+        <button className="five" data-time="300" onClick={startMeditation}>
           5 Mins
         </button>
         <br></br>
         <br></br>
-        <button className="ten" data-time="600">
+        <button className="ten" data-time="600" onClick={startMeditation}>
           10 Mins
         </button>
         <br></br>

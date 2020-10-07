@@ -17,3 +17,6 @@ Just a project I am working on during my #100DaysOfCode challenge to create an a
 - [ ] Play peaceful sounds button
 - [ ] New page with a meditation video
 - [x] React Router
+      Copyright - Made By Nouran Bakry
+      Background Images from Source.Unsplash
+      Quotes from Quotes.Rest

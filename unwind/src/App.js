@@ -25,7 +25,10 @@ const App = () => {
         style={
           backgroundState
             ? { backgroundImage: `url(` + image + `)` }
-            : { backgroundImage: `url(` + "./resources/background.png" + `)` }
+            : {
+                backgroundImage: `url(` + `"./resources/background.png"` + `) `,
+                backgroundRepeat: "no-repeat",
+              }
         }
         className="App"
       >
