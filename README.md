@@ -1,1 +1,3 @@
-# unwind 🧘‍♂️🌟 - A simple meditation application in React.js
+# unwind 🧘‍♂️🌟 - 
+
+A simple meditation application in React.js
