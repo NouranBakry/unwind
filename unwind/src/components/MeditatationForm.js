@@ -1,16 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./MeditationForm.css";
 
-const MeditationForm = () => {
-  const [image, setImage] = useState("");
-  useEffect(() => {
-    fetch("https://source.unsplash.com/daily").then((data) => {
-      console.log(data);
-      console.log(data.url);
-      setImage(data.url);
-    });
-    return () => {};
-  }, []);
+const MeditationForm = (props) => {
+  function startMeditation(event) {
+    event.preventDefault();
+    props.onChange(true);
+  }
   return (
     <form className="MeditaionForm">
       <div>
@@ -19,7 +14,7 @@ const MeditationForm = () => {
             ⌛
           </span>
         </h1>
-        <button className="two" data-time="120" >
+        <button className="two" data-time="120" onClick={startMeditation}>
           2 mins
         </button>
         <br></br>
