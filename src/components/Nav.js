@@ -6,15 +6,19 @@ const Nav = () => {
     <div className="Nav">
       <ul className="ul">
         <li className="git">
-          <a href={"https://www.github.com/NouranBakry/unwind"}>Github</a>
+          <button
+            className="gitButton"
+            onClick={()=> window.open("https://www.github.com/NouranBakry/unwind", "_blank")}
+          >Github
+          </button>
         </li>
         <li className="twitter">
-          <a href={"http://www.twitter.com/nouranbakry_"}>
+          <button className= "twitterButton" onClick={()=>window.open("http://www.twitter.com/nouranbakry_", "_blank")}>
             Follow me on Twitter
-          </a>
+          </button>
         </li>
         <li className="email">
-          <a href={"mailto:nouranaymanbakry@gmail.com"}>Email me</a>
+          <button className="emailButton" onClick={()=> window.open("mailto:nouranaymanbakry@gmail.com","_blank")}>Email me</button>
         </li>
         {/* <li className="resume">
           <a href="">Hire Me</a> 
