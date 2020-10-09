@@ -18,7 +18,7 @@ const App = () => {
     return () => {};
   }, []);
   return (
-    <Router>
+    <Router basename={`${process.env.PUBLIC_URL}/`}>
       <div
         style={
           backgroundState
