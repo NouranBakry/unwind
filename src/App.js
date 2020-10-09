@@ -7,14 +7,12 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
   const [image, setImage] = useState("");
-  const [backgroundState, setBackgroundState] = useState(false);
+  const [backgroundState, setBackgroundState] = useState();
   function onBackgroundChange(newBackgroundState) {
     setBackgroundState(newBackgroundState);
   }
   useEffect(() => {
     fetch("https://source.unsplash.com/1600x900/daily?water").then((data) => {
-      console.log(data);
-      console.log(data.url);
       setImage(data.url);
     });
     return () => {};
@@ -25,10 +23,7 @@ const App = () => {
         style={
           backgroundState
             ? { backgroundImage: `url(` + image + `)` }
-            : {
-                backgroundImage: `url(` + `"./resources/background.png"` + `) `,
-                backgroundRepeat: "no-repeat",
-              }
+            : { backgroundImage: "none"}
         }
         className="App"
       >

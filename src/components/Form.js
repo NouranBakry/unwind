@@ -17,7 +17,7 @@ const Form = () => {
   }, []);
   const handlequotesButton = (event) => {
     event.preventDefault();
-    setState(true);
+    setState(!state);
   };
   return (
     <form className="Form">

@@ -1,34 +1,33 @@
 .title {
-    color: white;
-    font-family: 'CoolVetica',
-        Helvetica Neue-serif;
-    font-size: 100px;
-    font-weight: 500;
+  color: white;
+  font-family: "CoolVetica", Helvetica Neue-serif;
+  font-size: 100px;
+  font-weight: 500;
 }
 
 .meditationButton,
 .quoteButton {
-    color: white;
-    width: 30%;
-    height: 20%;
-    background: none;
-    font-size: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 2px solid white;
-    transition: all 0.5s ease;
+  color: white;
+  width: 30%;
+  height: 20%;
+  background: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: all 0.5s ease;
 }
 
 .quote {
-    color: white;
-    font-family: 'CoolVetica',
-        Helvetica Neue-serif;
-    font-size: 30px;
-    font-weight: 500;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-
+  color: white;
+  font-family: "CoolVetica", Helvetica Neue-serif;
+  font-size: 20px;
+  font-weight: 100;
+  display: block;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-style: double;
 }

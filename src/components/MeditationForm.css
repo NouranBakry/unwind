@@ -13,7 +13,7 @@
 }
 
 
-.instruction, .timeDisplay {
+.instruction, .timeDisplay, .Message {
     color: white;
     font-family: 'CoolVetica',
         Helvetica Neue-serif;
