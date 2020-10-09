@@ -74,12 +74,8 @@ const MeditationForm = ({ backgroundState, onChange }) => {
         </button>
         <br></br>
         <br></br>
-        <h2 className="Message">
-          {timeState && <a>Close your eyes and focus on your breath </a>}
-        </h2>
-        <h3 className="timer">
-          {timeState && <a className="timeDisplay">{displayTimer}</a>}
-        </h3>
+        {timeState && <div className="Message">Close your eyes and focus on your breath </div>}
+        {timeState && <div className="timeDisplay">{displayTimer}</div>}
         <audio className="song" src={song} control></audio>
       </div>
     </form>
