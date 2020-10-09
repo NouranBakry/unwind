@@ -1,0 +1,9 @@
+[build]
+    command = "react-scripts build"
+    publish = "https://github.com/NouranBakry/unwind/build"
+    base = "https://github.com/NouranBakry/unwind"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
