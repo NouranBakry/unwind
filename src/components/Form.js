@@ -23,12 +23,7 @@ const Form = () => {
     <form className="Form">
       <div>
         <header className="title"></header>
-        <header className="title">
-          Unwind
-          <span role="img" aria-label="lotus">
-            🧘‍♀️
-          </span>
-        </header>
+        <header className="title">Unwind</header>
         <br></br>
         <button className="quoteButton" onClick={handlequotesButton}>
           Today's Fortune Cookie
@@ -40,14 +35,17 @@ const Form = () => {
         <br></br>
         <Link to="meditate">
           <button className="meditationButton">
-            Start Meditating<span role="img" aria-label="meditate">🧘‍♀️</span>
+            Start Meditating
+            <span role="img" aria-label="meditate">
+              🧘‍♀️
+            </span>
           </button>{" "}
         </Link>
         <br></br>
         <br></br>
         {state && (
           <div className="quote">
-            "{quote}" - {author}
+            "{quote}" - {author}"
           </div>
         )}
       </div>

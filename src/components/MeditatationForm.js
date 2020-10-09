@@ -14,18 +14,26 @@ const MeditationForm = ({backgroundState, onChange}) => {
     onChange(!backgroundState.backgroundState);
     setTimeState(!timeState);
     setTime(120);
+    const song = document.getElementsByClassName("song")[0];
+    song.play();
+    // const song = new Audio("./resources/beach.mp3");
+    // song.play();
   }
   function fiveMinuteMeditation(event){
     event.preventDefault();
     onChange(!backgroundState.backgroundState);
     setTimeState(!timeState);
     setTime(300);
+    const song = document.getElementsByClassName("song")[0];
+    song.play();
   }
   function tenMinuteMeditation(event){
     event.preventDefault();
     onChange(!backgroundState.backgroundState);
     setTimeState(!timeState);
     setTime(600);
+    const song = document.getElementsByClassName("song")[0];
+    song.play();
   }
   return (
     <form className="MeditaionForm">
@@ -52,7 +60,9 @@ const MeditationForm = ({backgroundState, onChange}) => {
         <br></br>
         <h2 className="Message">{timeState && <a>Close your eyes and focus on your breath</a>}</h2>
         {timeState && <div className="timeDisplay">{time}</div>}
-        <audio className="song" src="./resources/beach.mp3"></audio>
+        <audio className="song">
+          <source src="/resources/beach.mp3"></source>
+        </audio>
       </div>
     </form>
   );
