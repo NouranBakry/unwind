@@ -20,9 +20,6 @@ const Nav = () => {
         <li className="email">
           <button className="emailButton" onClick={()=> window.open("mailto:nouranaymanbakry@gmail.com","_blank")}>Email me</button>
         </li>
-        {/* <li className="resume">
-          <a href="">Hire Me</a> 
-        </li> */}
       </ul>
     </div>
   );
