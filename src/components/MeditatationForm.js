@@ -6,10 +6,9 @@ const MeditationForm = ({ backgroundState, onChange }) => {
   const [time, setTime] = useState();
   const [timeState, setTimeState] = useState(false);
   const [displayTimer, setDisplayTimer] = useState();
-  useEffect(() => {
-    setDisplayTimer(calculateTime());
-
-  }, []);
+  useEffect(()=>{
+    calculateTime();
+  })
   function calculateTime(){
     if(time > 0){
       let seconds = time % 60;
