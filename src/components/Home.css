@@ -1,13 +1,18 @@
-.two,
-.five,
-.ten {
-    color: white;
+.home{
+        font-family: 'CoolVetica',
+        Helvetica Neue-serif;
+        color: white;
+        font-size: 30px;
+
+}
+.homeButton{
+color: white;
     height: 20%;
     background: none;
-    font-size: 20px;
+    font-size: 25px;
     border-radius: 5px;
-    padding:  2px;
-    width:10%;
+    padding:  4px;
+    width:20%;
     cursor: pointer;
     border: 2px solid white;
     transition: all 0.5s ease;
@@ -16,13 +21,4 @@
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     font-family:  "CoolVetica", Helvetica Neue-serif;
-}
-
-
-.timeDisplay, .Message {
-    color: white;
-    font-family: 'CoolVetica',
-        Helvetica Neue-serif;
-    font-size: 40px;
-    font-weight: 100;
 }

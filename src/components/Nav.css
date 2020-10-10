@@ -9,22 +9,48 @@
     padding: 0;
     overflow: hidden;
     font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  "CoolVetica", Helvetica Neue-serif;
 }
 
-.gitButton {
+.gitButton, .emailButton, .twitterButton, .linkedinButton {
     float: left;
-    color: white;
-    background: none;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
     transition: all 0.5s ease;
+    transition-duration: 0.4s;
     display: block;
-    padding: 16px;
+    padding: 12px 10px;
     text-decoration: none;
+    border-radius: 15px;
+    background: none;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: white;
+    border:   white;
+        font-family:  "CoolVetica", Helvetica Neue-serif;
 }
-
-.twitter {
+.backgroundButton{
+    float: right;
+        font-size: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    transition-duration: 0.4s;
+    display: block;
+    padding: 12px 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    background: none;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: white;
+    border:   white;
+    font-family:  "CoolVetica", Helvetica Neue-serif;
+}
+/* .twitter {
     float: left;
     color: white;
     background: none;
@@ -46,4 +72,4 @@
     display: block;
     padding: 16px;
     text-decoration: none;
-}
+} */

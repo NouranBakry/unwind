@@ -3,13 +3,15 @@ import "./App.css";
 import Form from "./components/Form";
 import MeditationForm from "./components/MeditatationForm";
 import Nav from "./components/Nav";
+import Home from "./components/Home"
 import ReactGA from "react-ga"; //Google Analytics
 import {createBrowserHistory} from 'history';
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import background from "./resources/background.png";
 
 const App = () => {
   const [image, setImage] = useState("");
-  const [backgroundState, setBackgroundState] = useState();
+  const [backgroundState, setBackgroundState] = useState(false);
   function onBackgroundChange(newBackgroundState) {
     setBackgroundState(newBackgroundState);
   }
@@ -25,7 +27,6 @@ const App = () => {
     fetch("https://source.unsplash.com/1600x900/daily?water").then((data) => {
       setImage(data.url);
     });
-
     return () => {};
   }, []);
   return (
@@ -34,13 +35,19 @@ const App = () => {
         style={
           backgroundState
             ? { backgroundImage: `url(` + image + `)` }
-            : { backgroundImage: "none" }
+            : { backgroundImage: {background}}
         }
         className="App"
       >
-        <Nav></Nav>
-        <Form></Form>
+        <Nav backgroundState={backgroundState} onChange={onBackgroundChange}></Nav>
         <Switch>
+        <Route exact path="/">
+        <Home/>
+        </Route>
+          <Route 
+          path="/home"
+          ><Form/>
+          </Route>
           <Route
             path="/meditate"
             render={(backgroundState) => (

@@ -1,11 +1,10 @@
 .App {
     height: 800px;
-    width: 1400px;
     text-align: center;
-    background: rgb(109, 109, 241);
     font-family: 'CoolVetica',
         Helvetica Neue-serif;
-    display: inline-block;
+    display: flexbox;
     align-items: center;
+     background: linear-gradient( to right, rgb(203, 153, 207), rgb(142, 147, 216)) ;
     opacity: 0.9;
 }

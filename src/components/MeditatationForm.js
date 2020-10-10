@@ -4,79 +4,62 @@ import song from "../resources/beach.mp3";
 
 const MeditationForm = ({ backgroundState, onChange }) => {
   const [time, setTime] = useState();
-  const [timeState, setTimeState] = useState(false);
+  const [timeState, setTimeState] = useState();
   const [displayTimer, setDisplayTimer] = useState();
-  useEffect(()=>{
-    calculateTime();
-  })
-  function calculateTime(){
-    if(time > 0){
-      let seconds = time % 60;
-      seconds = seconds === 0 ? "00" : seconds;
-      seconds = seconds !== "00" && seconds < 10 ? `0${seconds}` : seconds;
-      let displayTime = `${Math.floor(time / 60)}:${seconds}`;
-      setDisplayTimer(displayTime);
-      console.log(displayTimer);
-      setTime(previousTime => previousTime-1);
-      console.log(time);
-    }  
-    if (time === 0) {
-       setTimeState(false);
-        setTime(0);
-    }
-  }
-  function twoMinuteMeditation(event) {
-    event.preventDefault();
-    onChange(!backgroundState.backgroundState);
-    setTimeState(true);
-    setTime(120);
-    const song = document.getElementsByClassName("song")[0];
-    song.play();
-  }
+  useEffect(() => {});
 
-  function fiveMinuteMeditation(event) {
+  const startMeditation = (event, time) => {
     event.preventDefault();
-    onChange(!backgroundState.backgroundState);
+    // onChange(!backgroundState.backgroundState);
     setTimeState(true);
-    setTime(300);
+    setTime(time);
     const song = document.getElementsByClassName("song")[0];
     song.play();
-  }
-
-  function tenMinuteMeditation(event) {
-    event.preventDefault();
-    onChange(!backgroundState.backgroundState);
-    setTimeState(true);
-    setTime(600);
-    const song = document.getElementsByClassName("song")[0];
-    song.play();
-  }
+  };
   return (
     <form className="MeditaionForm">
       <div>
-        <h1 className="instruction">
-          <span role="img" aria-label="clock">
-            ⌛
-          </span>
-        </h1>
-        <button className="two" data-time="120" onClick={twoMinuteMeditation}>
+        {/* <img
+          src="https://media.giphy.com/media/xFmuT64Jto3mRO4w3G/giphy.gif"
+          alt="hourglass"
+          height="150" 
+          width="200"
+        /> */}
+        <br></br>
+        <br></br>
+        <button
+          className="two"
+          data-time="120"
+          onClick={(e)=>{startMeditation(e, 120)}}
+        >
           2 mins
         </button>
         <br></br>
         <br></br>
-        <button className="five" data-time="300" onClick={fiveMinuteMeditation}>
+        <button
+          className="five"
+          data-time="300"
+          onClick={(e)=>{startMeditation(e, 300)}}
+        >
           5 Mins
         </button>
         <br></br>
         <br></br>
-        <button className="ten" data-time="600" onClick={tenMinuteMeditation}>
-          10 Mins
+        <button
+          className="ten"
+          data-time="600"
+          onClick={(e)=>{startMeditation(e, 600)}}
+        >10 Mins
         </button>
         <br></br>
         <br></br>
-        {timeState && <div className="Message">Close your eyes and focus on your breath </div>}
+        {timeState && (
+          <div className="Message">
+            close your eyes and focus on your breath{" "}
+          </div>
+        )}
         {timeState && <div className="timeDisplay">{displayTimer}</div>}
-        <audio className="song" src={song} control></audio>
+        <audio className="song" src={song}></audio>
       </div>
     </form>
   );
