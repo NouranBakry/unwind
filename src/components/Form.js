@@ -17,13 +17,12 @@ const Form = () => {
   }, []);
   const handlequotesButton = (event) => {
     event.preventDefault();
-    setState(!state);
+    setState( previousState => !previousState);
   };
   return (
     <form className="Form">
       <div>
         <header className="title"></header>
-        {/* <header className="title">unwind unplug</header> */}
         <br></br>
         <button className="quoteButton" onClick={handlequotesButton}>
           Today's Fortune Cookie
