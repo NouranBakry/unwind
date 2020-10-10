@@ -17,7 +17,7 @@ const Form = () => {
   }, []);
   const handlequotesButton = (event) => {
     event.preventDefault();
-    setState( previousState => !previousState);
+    setState(!state);
   };
   return (
     <form className="Form">
