@@ -4,6 +4,7 @@ import Form from "./components/Form";
 import MeditationForm from "./components/MeditatationForm";
 import Nav from "./components/Nav";
 import ReactGA from "react-ga"; //Google Analytics
+import {createBrowserHistory} from 'history';
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
