@@ -3,6 +3,7 @@ import "./App.css";
 import Form from "./components/Form";
 import MeditationForm from "./components/MeditatationForm";
 import Nav from "./components/Nav";
+import ReactGA from "react-ga"; //Google Analytics
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
@@ -11,14 +12,23 @@ const App = () => {
   function onBackgroundChange(newBackgroundState) {
     setBackgroundState(newBackgroundState);
   }
+  const history = createBrowserHistory();
+  // Initialize google analytics page view tracking
+  history.listen((location) => {
+    ReactGA.initialize("UA-180241240-1");
+    ReactGA.set({ page: location.pathname });
+    ReactGA.pageview(location.pathname);
+  });
+
   useEffect(() => {
     fetch("https://source.unsplash.com/1600x900/daily?water").then((data) => {
       setImage(data.url);
     });
+
     return () => {};
   }, []);
   return (
-    <Router>
+    <Router history={history}>
       <div
         style={
           backgroundState
