@@ -1,3 +1,3 @@
-# unwind and unplug 🧘‍♂️🌟 - https://unwind-unplug.netlify.app
+# unwind and unplug 🧘‍♂️🌟 
 
 A simple meditation application in React.js
