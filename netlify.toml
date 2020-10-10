@@ -2,16 +2,3 @@
   from = "/*"
   to = "/index.html"
   status = 200
-[[redirects]]
-  from = "/search"
-  to = "https://www.github.com/NouranBakry"
-  status = 200
-  force = true
-  headers = {X-From = "Netlify"}
-[[redirects]]
-  from = "/search"
-  to = "https://www.twitter.com/nouranbakry_"
-  status = 200
-  force = true
-  headers = {X-From = "Netlify"}
-
