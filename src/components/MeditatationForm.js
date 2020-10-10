@@ -10,7 +10,6 @@ const MeditationForm = ({ backgroundState, onChange }) => {
 
   const startMeditation = (event, time) => {
     event.preventDefault();
-    // onChange(!backgroundState.backgroundState);
     setTimeState(true);
     setTime(time);
     const song = document.getElementsByClassName("song")[0];
