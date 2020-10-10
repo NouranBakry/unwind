@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./MeditationForm.css";
 import song from "../resources/beach.mp3";
 
@@ -6,30 +6,27 @@ const MeditationForm = () => {
   const [state, setState] = useState(false);
   const [currentTime, setCurrentTime] = useState();
   const [displayTime, setDisplayTime] = useState();
-  useEffect(()=>{
-    if(state){
-      let seconds = currentTime % 60;
-      seconds = (seconds ===0)? '00': seconds;
-      seconds = (seconds !== '00' && seconds < 10) ? `0${seconds}`: seconds;
-      let displayTime = `${Math.floor(currentTime/60)}:${seconds}`;
-      setDisplayTime(displayTime);
-    }
-    return()=>{};
-  }, [state]);
-  useEffect(()=>{
-    if(currentTime === 0){
+
+  useEffect(() => {
+    let seconds = currentTime % 60;
+    seconds = seconds === 0 ? "00" : seconds;
+    seconds = seconds !== "00" && seconds < 10 ? `0${seconds}` : seconds;
+    let displayTime = `${Math.floor(currentTime / 60)}:${seconds}`;
+    setDisplayTime(displayTime);
+    setCurrentTime(currentTime - 1);
+    if (currentTime === 0) {
       setState(false);
     }
-    setCurrentTime(currentTime-1);
-    return()=>{};
-  }, [currentTime])
-    const startMeditation = (event, time) => {
-      event.preventDefault();
-      const song = document.getElementsByClassName("song")[0];
-      setState(!state);
-      setCurrentTime(time);
-      song.play();
+    return () => {};
+  }, [currentTime]);
+  const startMeditation = (event, time) => {
+    event.preventDefault();
+    const song = document.getElementsByClassName("song")[0];
+    setState(!state);
+    setCurrentTime(time);
+    song.play();
   };
+
   return (
     <form className="MeditaionForm">
       <div>
@@ -39,7 +36,7 @@ const MeditationForm = () => {
           className="two"
           data-time="120"
           onClick={(e) => {
-            startMeditation(e,120);
+            startMeditation(e, 120);
           }}
         >
           2 mins
@@ -50,7 +47,7 @@ const MeditationForm = () => {
           className="five"
           data-time="300"
           onClick={(e) => {
-            startMeditation(e,300);
+            startMeditation(e, 300);
           }}
         >
           5 Mins
@@ -61,7 +58,7 @@ const MeditationForm = () => {
           className="ten"
           data-time="600"
           onClick={(e) => {
-            startMeditation(e,600);
+            startMeditation(e, 600);
           }}
         >
           10 Mins
@@ -69,7 +66,7 @@ const MeditationForm = () => {
         <br></br>
         <br></br>
         <div className="Message">close your eyes and focus on your breath </div>
-        {state &&(<div className="timeDisplay">{displayTime}</div>)}
+        {state && <div className="timeDisplay">{displayTime}</div>}
         <audio className="song" src={song}></audio>
       </div>
     </form>

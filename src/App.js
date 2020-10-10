@@ -23,6 +23,7 @@ const App = () => {
     ReactGA.pageview(location.pathname);
   });
 
+
   useEffect(() => {
     fetch("https://source.unsplash.com/1600x900/daily?water").then((data) => {
       setImage(data.url);
