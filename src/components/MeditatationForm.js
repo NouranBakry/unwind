@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./MeditationForm.css";
 import song from "../resources/beach.mp3";
+import { Link } from "react-router-dom";
+
 
 const MeditationForm = () => {
   const [state, setState] = useState(false);
@@ -29,9 +31,15 @@ const MeditationForm = () => {
 
   return (
     <form className="MeditaionForm">
-      <div>
-        <br></br>
-        <br></br>
+          <h1 className ="Title">Get Ready to start your Meditation session</h1>
+          <p className ="Message">
+            Take a Deep Breath Breath in through your nose and out through your
+            mouth Imagine yourself lying on warm sunny beach watching the waves
+            and the birds flying Remember everything you are grateful for at
+            this very present moment Listen to the sounds surrounding you Focus
+            on your breath When you can feel the air and sun on your skin slowly
+            start to close your eyes and focus on the sound of the beach
+          </p>
         <button
           className="two"
           data-time="120"
@@ -41,8 +49,6 @@ const MeditationForm = () => {
         >
           2 mins
         </button>
-        <br></br>
-        <br></br>
         <button
           className="five"
           data-time="300"
@@ -52,8 +58,6 @@ const MeditationForm = () => {
         >
           5 Mins
         </button>
-        <br></br>
-        <br></br>
         <button
           className="ten"
           data-time="600"
@@ -63,12 +67,13 @@ const MeditationForm = () => {
         >
           10 Mins
         </button>
-        <br></br>
-        <br></br>
-        <div className="Message">close your eyes and focus on your breath </div>
+        <button className="playButton"><div className="polygon"></div></button>
+        <button className="Background-Button">Get Today’s Background</button>
+        <Link to="home">
+        <button className="home">Home</button>  
+        </Link>
         {state && <div className="timeDisplay">{displayTime}</div>}
         <audio className="song" src={song}></audio>
-      </div>
     </form>
   );
 };

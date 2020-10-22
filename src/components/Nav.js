@@ -2,10 +2,10 @@ import React from "react";
 import "./Nav.css";
 
 const Nav = ({backgroundState, onChange}) => {
-  const getNewBackground = (event) => {
-    event.preventDefault();
-     onChange(!backgroundState.backgroundState);
-  }
+  // const getNewBackground = (event) => {
+  //   event.preventDefault();
+  //    onChange(!backgroundState.backgroundState);
+  // }
   return (
     <div className="Nav">
       <ul className="ul">
@@ -27,11 +27,11 @@ const Nav = ({backgroundState, onChange}) => {
         <li className="email">
           <button className="emailButton" onClick={()=> window.open("mailto:nouranaymanbakry@gmail.com","_blank")}>Email me</button>
         </li>
-        <li>
+        {/* <li>
           <button className="backgroundButton" onClick={getNewBackground}>
           <span role="img" aria-label="camera">📷</span>
           See Today's Inspirational Photo</button>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

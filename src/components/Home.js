@@ -12,7 +12,10 @@ const Home = () => {
       <br></br>
       <br></br>
       <h2 className="Description">live mindfully, meditate anytime anywhere</h2>
+      <Link to="meditate">
       <button className="Meditate-Button">Meditate</button>
+            </Link>
+
       <button className="FortuneCookie-Button">Fortune Cookie</button>
       <button className="About-Button">About me</button>
       <img

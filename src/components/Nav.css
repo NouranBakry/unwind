@@ -9,7 +9,7 @@
     padding: 0;
     overflow: hidden;
     font-size: large;
-    font-family:  "CoolVetica", Helvetica Neue-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .gitButton, .emailButton, .twitterButton, .linkedinButton {
@@ -27,13 +27,13 @@
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-    color: white;
+        color: #001858;
     border:   white;
-        font-family:  "CoolVetica", Helvetica Neue-serif;
+    font-family: 'Poppins', sans-serif;
 }
-.backgroundButton{
+/* .backgroundButton{
     float: right;
-        font-size: 15px;
+    font-size: 15px;
     cursor: pointer;
     transition: all 0.5s ease;
     transition-duration: 0.4s;
@@ -46,30 +46,7 @@
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-    color: white;
+    color: #001858;
     border:   white;
-    font-family:  "CoolVetica", Helvetica Neue-serif;
-}
-/* .twitter {
-    float: left;
-    color: white;
-    background: none;
-    font-size: 20px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    display: block;
-    padding: 16px;
-    text-decoration: none;
-}
-
-.email {
-    float: left;
-    color: white;
-    background: none;
-    font-size: 20px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    display: block;
-    padding: 16px;
-    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 } */
