@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Form from "./components/Form";
+import Nav from "./components/Nav";
 import MeditationForm from "./components/MeditatationForm";
 import Home from "./components/Home";
 import ReactGA from "react-ga"; //Google Analytics
@@ -39,7 +40,7 @@ const App = () => {
         className="App"
       >
 
-        {/* <Nav backgroundState={backgroundState} onChange={onBackgroundChange}></Nav> */}
+        <Nav backgroundState={backgroundState} onChange={onBackgroundChange}></Nav>
         <Switch>
           <Route exact path="/">
             <Home />

@@ -40,7 +40,7 @@
 .Meditate-Button{
     position: absolute;
     width: 109px;
-        height: 45px;
+    height: 45px;
     left: 1475px;
     top: 29px;
     background: #F582AE;
@@ -60,7 +60,7 @@
 .FortuneCookie-Button{
     position: absolute;
     width: 149px;
-        height: 45px;
+    height: 45px;
     left: 1650px;
     top: 29px;
     background: #F582AE;
@@ -107,7 +107,7 @@
     height: 40px;
     left: 960px;
     top: 450px;
-        background: #F582AE;
+    background: #F582AE;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -115,6 +115,5 @@
     line-height: 36px;
     text-align: center;
     color: #001858;
-        border-radius: 20px;
-
+    border-radius: 20px;
 }

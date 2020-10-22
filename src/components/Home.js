@@ -20,8 +20,8 @@ const Home = () => {
         alt="yoga"
         src={img}
       ></img>
-      <Link>
-        <button className="Start-Button">Start Meditating now</button>
+      <Link to="meditate">
+        <button className="Start-Button">Start Meditating Now</button>
       </Link>
     </div>
   );
