@@ -1,24 +1,120 @@
-.home{
-        font-family: 'CoolVetica',
-        Helvetica Neue-serif;
-        color: white;
-        font-size: 30px;
-
+.Home{
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    background: #F3D2C1;
 }
-.homeButton{
-color: white;
-    height: 20%;
-    background: none;
-    font-size: 25px;
-    border-radius: 5px;
-    padding:  4px;
-    width:20%;
-    cursor: pointer;
-    border: 2px solid white;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    font-family:  "CoolVetica", Helvetica Neue-serif;
+
+.Title{
+    position: absolute;
+    width: 666px;
+    height: 122px;
+    left: 960px;
+    top: 237px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 96px;
+    display: flex;
+    align-items: center;
+    color: #001858;
+}
+
+.Description{
+    position: absolute;
+    width: 666px;
+    height: 122px;
+    left: 960px;
+    top: 320px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 96px;
+    display: flex;
+    align-items: center;
+    color: #001858;
+}
+
+.Meditate-Button{
+    position: absolute;
+    width: 109px;
+        height: 45px;
+    left: 1475px;
+    top: 29px;
+    background: #F582AE;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #001858;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.FortuneCookie-Button{
+    position: absolute;
+    width: 149px;
+        height: 45px;
+    left: 1650px;
+    top: 29px;
+    background: #F582AE;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #001858;
+    border-radius: 20px;
+}
+.About-Button{
+        position: absolute;
+        width: 113px;
+        height: 45px;
+        left: 1278px;
+        top: 25px;
+        background: #F582AE;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        color: #001858;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+
+.img{
+    position: absolute;
+    width: 556px;
+    height: 1080px;
+    left: 181px;
+    top: 0px;
+}
+.Start-Button{
+    position: absolute;
+    width: 252px;
+    height: 40px;
+    left: 960px;
+    top: 450px;
+        background: #F582AE;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    color: #001858;
+        border-radius: 20px;
+
 }

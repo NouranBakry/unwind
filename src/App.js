@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Form from "./components/Form";
 import MeditationForm from "./components/MeditatationForm";
-import Nav from "./components/Nav";
-import Home from "./components/Home"
+import Home from "./components/Home";
 import ReactGA from "react-ga"; //Google Analytics
-import {createBrowserHistory} from 'history';
+import { createBrowserHistory } from "history";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import background from "./resources/background.png";
 
@@ -23,7 +22,6 @@ const App = () => {
     ReactGA.pageview(location.pathname);
   });
 
-
   useEffect(() => {
     fetch("https://source.unsplash.com/1600x900/daily?water").then((data) => {
       setImage(data.url);
@@ -36,18 +34,18 @@ const App = () => {
         style={
           backgroundState
             ? { backgroundImage: `url(` + image + `)` }
-            : { backgroundImage: {background}}
+            : { backgroundImage: { background } }
         }
         className="App"
       >
-        <Nav backgroundState={backgroundState} onChange={onBackgroundChange}></Nav>
+
+        {/* <Nav backgroundState={backgroundState} onChange={onBackgroundChange}></Nav> */}
         <Switch>
-        <Route exact path="/">
-        <Home/>
-        </Route>
-          <Route 
-          path="/home"
-          ><Form/>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/home">
+            <Form />
           </Route>
           <Route
             path="/meditate"

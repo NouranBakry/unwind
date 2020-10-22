@@ -1,30 +1,27 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
+import img from "../resources/sonnie-hiles-rX8gBeg2WM0-unsplash 1.png";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="Home">
+    <h1 className="Title">
+      Unwind and Unplug 
+    </h1>
+      <br></br>
+      <br></br>
+      <h2 className="Description">live mindfully, meditate anytime anywhere</h2>
+      <button className="Meditate-Button">Meditate</button>
+      <button className="FortuneCookie-Button">Fortune Cookie</button>
+      <button className="About-Button">About me</button>
       <img
-        src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif"
-        alt="welcome cat"
-      />
-      <br></br>
-      hellloo hooman{" "}
-      <span role="img" aria-label="hello">
-        👋
-      </span>
-      <br></br>
-      look at me, focus, appreciate everything about your present moment
-      <br></br>
-      <br></br>
-      <Link to="home">
-            <button className="homeButton">
-        Get Started
-        <span role="img" aria-label="yay">
-          🙌
-        </span>
-      </button>
+        className="img"
+        alt="yoga"
+        src={img}
+      ></img>
+      <Link>
+        <button className="Start-Button">Start Meditating now</button>
       </Link>
     </div>
   );

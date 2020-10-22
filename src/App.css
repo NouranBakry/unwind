@@ -1,10 +1,6 @@
 .App {
-    height: 800px;
-    text-align: center;
-    font-family: 'CoolVetica',
-        Helvetica Neue-serif;
-    display: flexbox;
-    align-items: center;
-     background: linear-gradient( to right, rgb(203, 153, 207), rgb(142, 147, 216)) ;
-    opacity: 0.9;
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    background: #F3D2C1;
 }
