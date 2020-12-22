@@ -6,26 +6,24 @@ import img from "../resources/sonnie-hiles-rX8gBeg2WM0-unsplash 1.png";
 const Home = () => {
   return (
     <div className="Home">
-    <h1 className="Title">
-      Unwind and Unplug 
-    </h1>
-      <br></br>
-      <br></br>
-      <h2 className="Description">live mindfully, meditate anytime anywhere</h2>
-      <Link to="meditate">
-      <button className="Meditate-Button">Meditate</button>
-            </Link>
-
-      <button className="FortuneCookie-Button">Fortune Cookie</button>
-      <button className="About-Button">About me</button>
-      <img
-        className="img"
-        alt="yoga"
-        src={img}
-      ></img>
-      <Link to="meditate">
-        <button className="Start-Button">Start Meditating Now</button>
-      </Link>
+      <div className="header">
+        {" "}
+        <div className="title">Unwind and Unplug</div>
+        <div className="description">
+          live mindfully, meditate anytime anywhere
+        </div>
+      </div>
+      <div className="buttons">
+        <Link to="meditate">
+          <button className="meditate-Button">Meditate</button>
+        </Link>
+        <button className="fortuneCookie-Button">Fortune Cookie</button>
+        <button className="about-Button">About me</button>
+      </div>
+      <div className="imgBlock">
+        {" "}
+        <img className="img" alt="yoga-lady" src={img}></img>
+      </div>
     </div>
   );
 };

@@ -1,130 +1,60 @@
 .Home{
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.header{
+    color: #001858;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    align-items: center;
     position: relative;
-    width: 1920px;
-    height: 1080px;
-    background: #F3D2C1;
+    top: 200px;
+    left: 100px;
 }
 
-.Title{
-    position: absolute;
-    width: 666px;
-    height: 122px;
-    left: 960px;
-    top: 237px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 64px;
-    line-height: 96px;
-    display: flex;
-    align-items: center;
-    color: #001858;
+.title{
+    font-size: 50px;
 }
 
-.Description{
-    position: absolute;
-    width: 666px;
-    height: 122px;
-    left: 960px;
-    top: 320px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
+.description{
     font-size: 24px;
-    line-height: 96px;
+}
+
+.buttons{
     display: flex;
-    align-items: center;
-    color: #001858;
+    justify-content: center;
+    align-items: center ;
+    padding: 10px;
 }
 
-.Meditate-Button{
-    position: absolute;
-    width: 109px;
-    height: 45px;
-    left: 1475px;
-    top: 29px;
-    background: #F582AE;
+.meditate-Button, .fortuneCookie-Button, .about-Button{
+    background: #ca9fc7;
+    border: 2px solid #001858;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 27px;
     text-align: center;
-    color: #001858;
     border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    border: 4px solid #001858;
-
 }
 
-.FortuneCookie-Button{
-    position: absolute;
-    width: 149px;
-    height: 45px;
-    left: 1650px;
-    top: 29px;
-    background: #F582AE;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
-    color: #001858;
-    border-radius: 20px;
-    border: 4px solid #001858;
-
-}
-
-.About-Button{
-    position: absolute;
-    width: 113px;
-    height: 45px;
-    left: 1278px;
-    top: 29px;
-    background: #F582AE;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
-    color: #001858;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    border: 4px solid #001858;
-
+.imgBlock{
+    display: inline-block;
 }
 
 .img{
-    position: absolute;
-    width: 556px;
-    height: 1080px;
-    left: 181px;
-    top: 0px;
-}
-
-.Start-Button{
-    position: absolute;
-    width: 220px;
-    height: 50px;
-    left: 960px;
-    top: 450px;
-    background: #F582AE;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 36px;
-    text-align: center;
-    color: #001858;
-    border-radius: 20px;
-    border: 4px solid #001858;
-
+    width: 300px;
+    height: 500px;
 }

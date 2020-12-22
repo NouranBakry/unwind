@@ -39,8 +39,10 @@ const App = () => {
         }
         className="App"
       >
-
-        <Nav backgroundState={backgroundState} onChange={onBackgroundChange}></Nav>
+        <Nav
+          backgroundState={backgroundState}
+          onChange={onBackgroundChange}
+        ></Nav>
         <Switch>
           <Route exact path="/">
             <Home />
@@ -48,15 +50,9 @@ const App = () => {
           <Route path="/home">
             <Form />
           </Route>
-          <Route
-            path="/meditate"
-            render={(backgroundState) => (
-              <MeditationForm
-                backgroundState={backgroundState}
-                onChange={onBackgroundChange}
-              />
-            )}
-          ></Route>
+          <Route path="/meditate">
+            <MeditationForm />>
+          </Route>
         </Switch>
       </div>
     </Router>

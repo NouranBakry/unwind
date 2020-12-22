@@ -1,146 +1,63 @@
-.two{
+.container{
     position: absolute;
-    top:600px;
-    left:400px;
-    width: 162px;
-    height: 52px;
-    background: #F582AE;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: absolute;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
-    color: #001858;
-    border-radius:20px;
-    border: 4px solid #001858;
+  display: block;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  align-items: center;
 }
 
-.five{
-        position: absolute;
-    top:600px;
-    left:600px;
-    width: 162px;
-    height: 52px;
-    background: #F582AE;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: absolute;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
+.header-container{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
     color: #001858;
-    border-radius:20px;
-    border: 4px solid #001858;
+    text-align: center;
+    position: relative;
+    left: 350px;
+    top:100px;
+    width:50%;
 }
-.ten {
-    position: absolute;
-    top:600px;
-    left:800px;
-    width: 162px;
-    height: 52px;
-    background: #F582AE;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: absolute;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
+.buttons{
+    display: flex;
     text-align: center;
-    color: #001858;
-    border-radius:20px;
-    border: 4px solid #001858;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+}
 
+.two, .five, .ten{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius:20px;
 }
 
 .Title {
-    position: absolute;
-    color: #001858;
-    font-family: 'Poppins', sans-serif;
     font-size: 38px;
-    font-weight: 100;
 }
 
 .Message {
-    position: absolute; 
-    width: 1350px;
-    height: 376px;
-    left: 275px;
-    top: 400px;
-    color: #001858;
+    font-size: 20px;
+}
+
+
+.toggler{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 300px;
+
+}
+.homeButton, .Background-Button{
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    font-weight: 100;
-}
-.timeDisplay{
-
-}
-
-.playButton{
-    position: absolute;
-    width: 314px;
-    height: 285px;
-    left: 500px;
-    bottom: 100px;
-    background: #F582AE;
-    mix-blend-mode: normal;
-    border: 8px solid #001858;
-    box-sizing: border-box;
-    border-radius:50%;
-    -webkit-border-radius:50%;
-    -moz-border-radius:50%;
-    -ms-border-radius:50%;
-    -o-border-radius:50%;
-}
-
-.polygon{
-    position: absolute;
-    background: #F582AE;
-    left: 130px;
-    bottom: 100px;
-    width: 0;
-    height: 0;
-    border-top: 25px solid transparent;
-    border-left: 50px solid #555;
-    border-bottom: 25px solid transparent;
-    border-left-color:#001858;
-}
-
-.Background-Button{
-    position: absolute;
-    width: 247px;
-    height: 46px;
-    right: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
-    line-height: 27px;
     text-align: center;
     color: #001858;
-    background: #F582AE;
     border-radius:20px;
-    border: 4px solid #001858;
-}
-.home{
-    position: absolute;
-    width: 247px;
-    height: 46px;
-    right: 300px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
-    color: #001858;
-    background: #F582AE;
-    border-radius:20px;
-    border: 4px solid #001858;
-
 }

@@ -1,29 +1,34 @@
+.homePage{
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.buttons-container{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+}
 .meditationButton,
 .quoteButton {
   font-family:  "CoolVetica", Helvetica Neue-serif;
-  color: white;
-  width: 30%;
-  height: 20%;
-  background: none;
+  color: black;
   font-size: 20px;
   border-radius: 5px;
-  cursor: pointer;
-  border: 2px solid white;
   transition: all 0.5s ease;
-  padding:  4px;
-  width:20%;
 }
 
 .quote {
-  color: white;
+  color: rgb(170, 42, 209);
   font-family: "CoolVetica", Helvetica Neue-serif;
   font-size: 20px;
-  font-weight: 100;
-  display: block;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-  background: violet;
+  display: inline-block;
 }

@@ -20,18 +20,16 @@ const Form = () => {
     setState(!state);
   };
   return (
-    <form className="Form">
+    <div className="homePage">
       <div>
-        <header className="title"></header>
-        <br></br>
-        <button className="quoteButton" onClick={handlequotesButton}>
+        <div className="title"></div>
+        <div className='buttons-container'>
+                  <button className="quoteButton" onClick={handlequotesButton}>
           Today's Fortune Cookie
           <span role="img" aria-label="cookie">
             🍪
           </span>
         </button>
-        <br></br>
-        <br></br>
         <Link to="meditate">
           <button className="meditationButton">
             Start Meditating
@@ -40,15 +38,14 @@ const Form = () => {
             </span>
           </button>{" "}
         </Link>
-        <br></br>
-        <br></br>
+        </div>
         {state && (
           <div className="quote">
             "{quote}" - {author}"
           </div>
         )}
       </div>
-    </form>
+    </div>
   );
 };
 

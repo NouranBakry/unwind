@@ -1,52 +1,28 @@
 .Nav {
     background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+    float: left;
 }
 
 .ul {
     list-style: none;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-size: large;
-    font-family: 'Poppins', sans-serif;
+    display: flex;
+    padding: 20px;
 }
 
 .gitButton, .emailButton, .twitterButton, .linkedinButton {
-    float: left;
-    font-size: 15px;
+    font-size: 20px;
     cursor: pointer;
     transition: all 0.5s ease;
     transition-duration: 0.4s;
-    display: block;
-    padding: 12px 10px;
     text-decoration: none;
-    border-radius: 15px;
     background: none;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-        color: #001858;
-    border:   white;
-    font-family: 'Poppins', sans-serif;
+    color: rgb(235, 122, 206);
+    border: none;
 }
-/* .backgroundButton{
-    float: right;
-    font-size: 15px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    transition-duration: 0.4s;
-    display: block;
-    padding: 12px 10px;
-    text-decoration: none;
-    border-radius: 15px;
-    background: none;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    color: #001858;
-    border:   white;
-    font-family: 'Poppins', sans-serif;
-} */
