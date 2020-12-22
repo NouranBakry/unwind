@@ -21,7 +21,7 @@
     align-items: center;
     position: relative;
     top: 200px;
-    left: 100px;
+    left: 480px;
 }
 
 .title{
@@ -36,10 +36,10 @@
     display: flex;
     justify-content: center;
     align-items: center ;
-    padding: 10px;
+    top: 250px;
 }
 
-.meditate-Button, .fortuneCookie-Button, .about-Button{
+.meditate-Button{
     background: #ca9fc7;
     border: 2px solid #001858;
     font-family: 'Poppins', sans-serif;
@@ -52,6 +52,8 @@
 
 .imgBlock{
     display: inline-block;
+    position: relative;
+    left: 250px;
 }
 
 .img{

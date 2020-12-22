@@ -8,7 +8,7 @@ const Home = () => {
     <div className="Home">
       <div className="header">
         {" "}
-        <div className="title">Unwind and Unplug</div>
+        <div className="title">Unwind, Unplug</div>
         <div className="description">
           live mindfully, meditate anytime anywhere
         </div>
@@ -17,8 +17,6 @@ const Home = () => {
         <Link to="meditate">
           <button className="meditate-Button">Meditate</button>
         </Link>
-        <button className="fortuneCookie-Button">Fortune Cookie</button>
-        <button className="about-Button">About me</button>
       </div>
       <div className="imgBlock">
         {" "}
