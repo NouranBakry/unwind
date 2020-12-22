@@ -7,7 +7,7 @@ const Form = () => {
   const [author, setAuthor] = useState("");
   const [state, setState] = useState(false);
   useEffect(() => {
-    fetch("http://quotes.rest/qod.json?category=inspire")
+    fetch("https://quotes.rest/qod.json?category=inspire")
       .then((res) => res.json())
       .then((data) => {
         setQuote(data.contents.quotes[0].quote);
