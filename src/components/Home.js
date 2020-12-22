@@ -2,10 +2,12 @@ import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import img from "../resources/sonnie-hiles-rX8gBeg2WM0-unsplash 1.png";
+import Nav from "./Nav";
 
 const Home = () => {
   return (
     <div className="Home">
+      <Nav></Nav>
       <div className="header">
         {" "}
         <div className="title">Unwind, Unplug</div>

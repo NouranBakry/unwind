@@ -1,7 +1,8 @@
 import React from "react";
 import "./Nav.css";
+import { Link } from "react-router-dom";
 
-const Nav = ({ backgroundState, onChange }) => {
+const Nav = () => {
   // const getNewBackground = (event) => {
   //   event.preventDefault();
   //    onChange(!backgroundState.backgroundState);
@@ -10,6 +11,11 @@ const Nav = ({ backgroundState, onChange }) => {
   return (
     <div className="Nav">
       <ul className="ul">
+        <li>
+          <Link to="">
+            <button className="unwindUnplug">Unwind Unplug</button>
+          </Link>
+        </li>
         <li className="git">
           <button
             className="gitButton"

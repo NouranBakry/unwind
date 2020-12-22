@@ -3,10 +3,10 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 100%;
+    /* width: 100%; */
     font-size: large;
     font-family: 'Poppins', sans-serif;
-    float: left;
+    /* float: left; */
 }
 
 .ul {
@@ -16,7 +16,7 @@
     padding: 20px;
 }
 
-.gitButton, .emailButton, .twitterButton, .linkedinButton {
+.unwindUnplug,.gitButton, .emailButton, .twitterButton, .linkedinButton {
     font-size: 20px;
     cursor: pointer;
     transition: all 0.5s ease;

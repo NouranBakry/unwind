@@ -30,37 +30,31 @@ const MeditationForm = () => {
 
   return (
     <div className="container">
-    <div className="header-container">
-      <div className="Title">Get Ready to start meditating</div>
-      <div>
-        {" "}
-        <p className="Message">
-          Take a Deep Breath Breath in through your nose and out through your
-          mouth Imagine yourself lying on warm sunny beach watching the waves
-          and the birds flying Remember everything you are grateful for at this
-          very present moment Listen to the sounds surrounding you Focus on your
-          breath When you can feel the air and sun on your skin slowly start to
-          close your eyes and focus on the sound of the beach
-        </p>
-    </div>
+      <div className="header-container">
+        <div className="Title">Get Ready to start meditating</div>
+        <div>
+          {" "}
+          <p className="Message">
+            Take a Deep Breath Breath in through your nose and out through your
+            mouth Imagine yourself lying on warm sunny beach watching the waves
+            and the birds flying Remember everything you are grateful for at
+            this very present moment Listen to the sounds surrounding you Focus
+            on your breath When you can feel the air and sun on your skin slowly
+            start to close your eyes and focus on the sound of the beach
+          </p>
+        </div>
       </div>
       <div className="buttons">
-        <button className="two" >
-          2 mins
-        </button>
-        <button className="five">
-          5 Mins
-        </button>
-        <button className="ten">
-          10 Mins
-        </button>
+        <button className="two">2 mins</button>
+        <button className="five">5 Mins</button>
+        <button className="ten">10 Mins</button>
       </div>
       <div className="player"></div>
-      <div className='toggler'>
-              <button className="Background-Button">Get Today’s Background</button>
-      <Link to="home">
-        <button className="homeButton">Home</button>
-      </Link>
+      <div className="toggler">
+        <button className="Background-Button">Today’s Background</button>
+        <Link to="home">
+          <button className="homeButton">Today's Fortune Cookie</button>
+        </Link>
       </div>
 
       {/* {state && <div className="timeDisplay">{displayTime}</div>} */}

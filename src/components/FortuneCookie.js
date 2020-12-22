@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./Form.css";
-import { Link } from "react-router-dom";
+import "./FortuneCookie.css";
+// import { Link } from "react-router-dom";
+import Nav from "./Nav";
 
-const Form = () => {
+
+const FortuneCookie = () => {
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
   const [state, setState] = useState(false);
@@ -21,23 +23,24 @@ const Form = () => {
   };
   return (
     <div className="homePage">
+    <Nav></Nav>
       <div>
         <div className="title"></div>
-        <div className='buttons-container'>
-                  <button className="quoteButton" onClick={handlequotesButton}>
-          Today's Fortune Cookie
-          <span role="img" aria-label="cookie">
-            🍪
-          </span>
-        </button>
-        <Link to="meditate">
-          <button className="meditationButton">
-            Start Meditating
-            <span role="img" aria-label="meditate">
-              🧘‍♀️
+        <div className="buttons-container">
+          <button className="quoteButton" onClick={handlequotesButton}>
+            Today's Fortune Cookie
+            <span role="img" aria-label="cookie">
+              🍪
             </span>
-          </button>{" "}
-        </Link>
+          </button>
+          {/* <Link to="meditate">
+            <button className="meditationButton">
+              Start Meditating
+              <span role="img" aria-label="meditate">
+                🧘‍♀️
+              </span>
+            </button>{" "}
+          </Link> */}
         </div>
         {state && (
           <div className="quote">
@@ -49,4 +52,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default FortuneCookie;
