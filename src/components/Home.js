@@ -3,6 +3,7 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import img from "../resources/sonnie-hiles-rX8gBeg2WM0-unsplash 1.png";
 import Nav from "./Nav";
+import LazyLoad from "react-lazy-load";
 
 const Home = () => {
   return (
@@ -22,7 +23,9 @@ const Home = () => {
       </div>
       <div className="imgBlock">
         {" "}
-        <img className="img" alt="yoga-lady" src={img}></img>
+        <LazyLoad>
+          <img className="img" alt="yoga-lady" src={img}></img>
+        </LazyLoad>
       </div>
     </div>
   );
