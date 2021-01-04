@@ -18,7 +18,7 @@ const App = () => {
   // Initialize google analytics page view tracking
   history.listen((location) => {
     ReactGA.initialize("UA-180241240-1");
-    ReactGA.set({ page: location.pathname });
+    ReactGA.set({ page: location.patZZhname });
     ReactGA.pageview(location.pathname);
   });
 
