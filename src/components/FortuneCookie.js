@@ -3,7 +3,6 @@ import "./FortuneCookie.css";
 // import { Link } from "react-router-dom";
 import Nav from "./Nav";
 
-
 const FortuneCookie = () => {
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
@@ -17,15 +16,16 @@ const FortuneCookie = () => {
       });
     return () => {};
   }, []);
+
   const handlequotesButton = (event) => {
     event.preventDefault();
     setState(!state);
   };
+
   return (
     <div className="homePage">
-    <Nav></Nav>
-      <div>
-        <div className="title"></div>
+      <Nav></Nav>
+      <div className="container">
         <div className="buttons-container">
           <button className="quoteButton" onClick={handlequotesButton}>
             Today's Fortune Cookie
@@ -33,20 +33,15 @@ const FortuneCookie = () => {
               🍪
             </span>
           </button>
-          {/* <Link to="meditate">
-            <button className="meditationButton">
-              Start Meditating
-              <span role="img" aria-label="meditate">
-                🧘‍♀️
-              </span>
-            </button>{" "}
-          </Link> */}
         </div>
-        {state && (
-          <div className="quote">
-            "{quote}" - {author}"
-          </div>
-        )}
+        <br></br>
+        <div className="quote-container">
+          {state && (
+            <div className="quote">
+              "{quote}" - {author}"
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -3,8 +3,8 @@ import "./App.css";
 import FortuneCookie from "./components/FortuneCookie";
 import MeditationForm from "./components/MeditatationForm";
 import Home from "./components/Home";
-import ReactGA from "react-ga"; //Google Analytics
-import { createBrowserHistory } from "history";
+// import ReactGA from "react-ga"; //Google Analytics
+// import { createBrowserHistory } from "history";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 // import background from "./resources/background.png";
 
@@ -14,13 +14,13 @@ const App = () => {
   // function onBackgroundChange(newBackgroundState) {
   //   setBackgroundState(newBackgroundState);
   // }
-  const history = createBrowserHistory();
-  // Initialize google analytics page view tracking
-  history.listen((location) => {
-    ReactGA.initialize("UA-180241240-1");
-    ReactGA.set({ page: location.patZZhname });
-    ReactGA.pageview(location.pathname);
-  });
+  // const history = createBrowserHistory();
+  // // Initialize google analytics page view tracking
+  // history.listen((location) => {
+  //   ReactGA.initialize("UA-180241240-1");
+  //   ReactGA.set({ page: location.patZZhname });
+  //   ReactGA.pageview(location.pathname);
+  // });
 
   // useEffect(() => {
   //   fetch("https://source.unsplash.com/1600x900/daily?water").then((data) => {
@@ -29,7 +29,7 @@ const App = () => {
   //   return () => {};
   // }, []);
   return (
-    <Router history={history}>
+    <Router>
       <div
         // style={
         //   backgroundState

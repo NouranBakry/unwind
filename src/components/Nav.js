@@ -1,6 +1,7 @@
 import React from "react";
 import "./Nav.css";
 import { Link } from "react-router-dom";
+import Logo from "../resources/unplug-logo.png";
 
 const Nav = () => {
   // const getNewBackground = (event) => {
@@ -13,10 +14,26 @@ const Nav = () => {
       <ul className="ul">
         <li>
           <Link to="">
-            <button className="unwindUnplug">Unwind Unplug</button>
+            <img src={Logo} alt="logo" width="20px" height="20px" />
+            <button className="unwindUnplug">Unwind-Unplug</button>
           </Link>
         </li>
-        <li className="git">
+        <li>
+          <Link to="/meditate">
+            <button className="meditate">Meditate</button>
+          </Link>
+        </li>
+        <li>
+          <Link to="">
+            <button className="contact">contact</button>
+          </Link>
+        </li>
+        <li>
+          <Link to="/home">
+            <button className="fortuneCookie">Today's Fortune Cookie</button>
+          </Link>
+        </li>
+        {/* <li className="git">
           <button
             className="gitButton"
             onClick={() =>
@@ -25,8 +42,8 @@ const Nav = () => {
           >
             Github
           </button>
-        </li>
-        <li className="twitter">
+        </li> */}
+        {/* <li className="twitter">
           <button
             className="twitterButton"
             onClick={() =>
@@ -35,8 +52,8 @@ const Nav = () => {
           >
             Twitter
           </button>
-        </li>
-        <li className="linkedin">
+        </li> */}
+        {/* <li className="linkedin">
           <button
             className="linkedinButton"
             onClick={() =>
@@ -45,8 +62,8 @@ const Nav = () => {
           >
             LinkedIn
           </button>
-        </li>
-        <li className="email">
+        </li> */}
+        {/* <li className="email">
           <button
             className="emailButton"
             onClick={() =>
@@ -55,7 +72,7 @@ const Nav = () => {
           >
             Email me
           </button>
-        </li>
+        </li> */}
         {/* <li>
           <button className="backgroundButton" onClick={getNewBackground}>
           <span role="img" aria-label="camera">📷</span>
