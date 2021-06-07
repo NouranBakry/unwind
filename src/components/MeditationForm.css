@@ -1,76 +1,81 @@
-.meditationForm{
+.meditationForm {
   position: absolute;
-  top:0px;
-  bottom:0px;
-  left:0px;
-  right:0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   display: inline;
   align-content: center;
   justify-content: center;
   align-items: center;
 }
 
-.meditation-container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.meditation-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../resources/simon-rae-IGOBsR93I7Y-unsplash.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.header-container{
-    display: flex;
-    font-family: 'Poppins', sans-serif;
-    color: #001858;
-    text-align: center;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+.header-container {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  color: #001858;
+  text-align: center;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-.buttons{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
+.buttons {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
 }
 
-.two, .five, .ten{
-    background: #ca9fc7;
-    border: 1px solid #001858;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 10px;
-    position: relative;
-    display: inline-block;
-    color: white;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    width: 180px;
-    height: 50px;
+.two,
+.five,
+.ten {
+  background: #ca9fc7;
+  border: 1px solid #001858;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+  color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 180px;
+  height: 50px;
 }
 
 .Title {
-    font-size: 38px;
+  font-size: 28px;
 }
 
 .Message {
-    display: inline-block;
-    font-size: 20px;
-    width:50%;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+  display: inline-block;
+  font-size: 20px;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
-.timer-display{
-    font-size: 40px;
+.timer-display {
+  font-size: 30px;
 }

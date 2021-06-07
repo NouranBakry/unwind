@@ -1,0 +1,39 @@
+.Contact-Page {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: inline;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../resources/pero-kalimero-9BJRGlqoIUk-unsplash.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.contact-page-container {
+  position: relative;
+  display: block;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.email-container {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  color: rgb(18, 104, 252);
+}
+
+.email-link {
+  text-decoration: none;
+  color: blue;
+}

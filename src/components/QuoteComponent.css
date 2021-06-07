@@ -1,0 +1,37 @@
+.quote {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: inline;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../resources/a-n-v-e-s-h-rRgFXkK_mfs-unsplash.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.quote-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  align-content: center;
+}
+
+.quote-text {
+  color: #a85eaf;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  position: relative;
+  font-weight: bold;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}

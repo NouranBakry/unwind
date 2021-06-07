@@ -26,30 +26,30 @@ const MeditationForm = () => {
     return () => clearInterval(intervalId);
   }, [currentTime, state]);
 
-  const startMeditation = (event, time) => {
-    event.preventDefault();
-    setState(!state);
-    setCurrentTime(time);
-  };
+  // const startMeditation = (event, time) => {
+  //   event.preventDefault();
+  //   setState(!state);
+  //   setCurrentTime(time);
+  // };
 
   return (
     <div className="meditationForm">
-      <Nav></Nav>
       <div className="meditation-container">
+              <Nav></Nav>
         <div className="header-container">
           <div className="Title">Get Ready to start meditating</div>
           <div>
             {" "}
             <br></br>
-            <div className="Message">
-              Take a Deep Breath Breath in through your nose and out through
-              your mouth Imagine yourself lying on warm sunny beach watching the
+            {/* <div className="Message">
+              Take a Deep Breath slowly.. Breath in through your nose and slowly breath out through
+              your mouth. We will have a simple visualisation exercise. Close your eyes and imagine yourself lying on warm sunny beach watching the
               waves and the birds flying Remember everything you are grateful
               for at this very present moment Listen to the sounds surrounding
               you Focus on your breath When you can feel the air and sun on your
               skin slowly start to close your eyes and focus on the sound of the
               beach
-            </div>
+            </div> */}
           </div>
           <br></br>
           <div className="timer-display">
@@ -59,24 +59,24 @@ const MeditationForm = () => {
           </div>
         </div>
         <div className="buttons">
-          <button
+          {/* <button
             onClick={(event) => startMeditation(event, 120)}
             className="two"
           >
             two minutes
-          </button>
-          <button
+          </button> */}
+          {/* <button
             onClick={(event) => startMeditation(event, 300)}
             className="five"
           >
             five minutes
-          </button>
-          <button
+          </button> */}
+          {/* <button
             onClick={(event) => startMeditation(event, 600)}
             className="ten"
           >
             ten minutes
-          </button>
+          </button> */}
         </div>
       </div>
       {/* <audio className="song" src={song}></audio> */}

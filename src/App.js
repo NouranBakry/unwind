@@ -1,52 +1,27 @@
 import React from "react";
 import "./App.css";
-import FortuneCookie from "./components/FortuneCookie";
+import QuoteComponent from "./components/QuoteComponent";
 import MeditationForm from "./components/MeditatationForm";
 import Home from "./components/Home";
-// import ReactGA from "react-ga"; //Google Analytics
-// import { createBrowserHistory } from "history";
+import Contact from "./components/Contact";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
-// import background from "./resources/background.png";
 
 const App = () => {
-  // const [image, setImage] = useState("");
-  // const [backgroundState, setBackgroundState] = useState(false);
-  // function onBackgroundChange(newBackgroundState) {
-  //   setBackgroundState(newBackgroundState);
-  // }
-  // const history = createBrowserHistory();
-  // // Initialize google analytics page view tracking
-  // history.listen((location) => {
-  //   ReactGA.initialize("UA-180241240-1");
-  //   ReactGA.set({ page: location.patZZhname });
-  //   ReactGA.pageview(location.pathname);
-  // });
-
-  // useEffect(() => {
-  //   fetch("https://source.unsplash.com/1600x900/daily?water").then((data) => {
-  //     setImage(data.url);
-  //   });
-  //   return () => {};
-  // }, []);
   return (
     <Router>
-      <div
-        // style={
-        //   backgroundState
-        //     ? { backgroundImage: `url(` + image + `)` }
-        //     : { backgroundImage: { background } }
-        // }
-        className="App"
-      >
+      <div className="App">
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/home">
-            <FortuneCookie />
+          <Route path="/quote">
+            <QuoteComponent />
           </Route>
           <Route path="/meditate">
             <MeditationForm />
+          </Route>
+          <Route path="/contact">
+            <Contact/>
           </Route>
         </Switch>
       </div>
