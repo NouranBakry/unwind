@@ -1,4 +1,4 @@
-# unwind and unplug meditation application 🧘‍♂️🌟
+# [unwind and unplug meditation application](https://unwind-unplug.netlify.app/#/) 🧘‍♂️🌟
 
 This is a simple static meditation application created using React.
 
