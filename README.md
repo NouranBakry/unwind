@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# unwind and unplug 🧘‍♂️🌟
-=======
-# unwind and unplug meditation application 🧘‍♂️🌟 
->>>>>>> f65b5c03b10c239ec29adacea04d3310c7b2bdc2
+# unwind and unplug meditation application 🧘‍♂️🌟
 
 This is a simple static meditation application created using React.
 
