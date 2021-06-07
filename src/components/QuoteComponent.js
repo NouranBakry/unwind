@@ -15,6 +15,7 @@ const QuoteComponent = () => {
     return () => {};
   }, []);
 
+ 
   return (
     <div className="quote">
         <div className="quote-container">
