@@ -18,7 +18,7 @@ npm start
 
 ## Deployment
 
-This project is currently deployed on [netlify](www.netlify.com).
+This project is currently deployed on [netlify](https://www.netlify.com/).
 
 ## License
 
